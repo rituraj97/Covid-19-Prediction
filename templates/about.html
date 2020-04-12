@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <title>COVID-19 Probability Detector</title>
+    <style>
+        body
+	    {
+		background-image:linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ),url("http://ddnews.gov.in/sites/default/files/covid24.jpg");
+		background-size:cover;
+        height: 100vh;
+        width: 100%;
+	    }
+        #headline
+	    {
+		border:5px solid rgb(1, 41, 44);
+		background-color:rgb(100, 115, 148);
+        padding: 2px;
+	    }
+        p{
+            margin-top: 100px;
+            color:antiquewhite;
+        }
+        h1,h3{
+          color:antiquewhite;
+        }
+        .container1{
+            color:whitesmoke;
+        }
+        
+    </style>
+  </head>
+  <body>
+    
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">COVID-19 Detector</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about" tabindex="-1">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact">Contacts</a>
+            </li>
+          </ul>
+          <!-- <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form> -->
+        </div>
+      </nav>
+
+      <div class="container">
+        <h2 class="text-center mt-3" id="headline">Corona Infection Probability Detector</h2>
+        <div class="container1">
+                <ul class="list-unstyled">
+                    <li class = "lead">As we all know our world is going through the global pandemic “COVID-19 VIRUS”.</li>
+                    <li class = "lead">Government is doing its best to aware people but we can’t deny the fact that it is not possible to Check and detect Virus in 133 crore Indians.</li>
+                    <li class = "lead">People seem to be confused between Flu and Virus. Due to climatic change many of us are suffering from Running Nose and Sneezing Problem.</li>
+                    <li class = "lead">So they are running towards doctor for checkup and Those who are not infected gather in one place and give the virus a chance to attack.</li>
+                    <li class = "lead">So My idea is to stop the transmission by prioritizing the tests and hence detecting the cases quickly.</li>
+                    <li class = "lead">Data of the patients can be collected on the basis of symptoms of COVID-19.</li>
+                    <li class = "lead">A Machine Learning model <b>(Using Logistic Regression)</b> is then trained on the data to find out the probability of a person having the infection.</li>
+                    <li class = "lead">The model is then used to find out whom to test for the infection first under a limited testing capacity.</li>
+                    <li class = "lead">For more accurate results a team of doctors can sit down to find out the best model parameters.(For this project I have generated random data.)</li>
+
+                    <li class = "lead">A Sample set of such parameters is as follows :
+                      <ul class = "lead"><u>Features</u>
+                        <li class = "lead">Having Fever? - Normal/High Body Temperature(Binary)</li>
+                        <li class = "lead">Gender - Male/Female/Transgender (0/1/-1)</li>
+                        <li class = "lead">Body Pain - 0/1 (Binary)</li>
+                        <li class = "lead">Age - Discrete</li>
+                        <li class = "lead">Runny Nose - 0/1 (Binary)</li>
+                        <li class = "lead">Difficulty in Breathing - -1/0/1 (No/Little/Severe)</li>
+                        <li class = "lead">Abroad Visit History - 0/1(Binary)</li>
+                      </ul>
+                      <br>
+                      <ul class = "lead"><u>Labels</u>
+                        <li class = "lead">
+                            Probability of having COVID-19 infection.
+                        </li>
+                        </ul>
+                    </li>
+                  </ul>
+                </div> 
+              <!--  </div> -->
+        <a href="/">
+            <button type="button" class="btn btn-outline-success">Go Back</button>
+        </a>
+      </div>
+  </body>
+</html>
