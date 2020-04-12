@@ -3,7 +3,7 @@ Covid-19 Detector which gives the probability of a patient being infected from c
 
 Visit website below to use the webapp:
 
-      http://covidprediction.pythonanywhere.com
+   http://covidprediction.pythonanywhere.com
 
 # Prerequisites
 
