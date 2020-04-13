@@ -22,7 +22,7 @@ This project has three major parts :
    
 # Running the project
 
-   1. Ensure that you are in the project home directory. Create the machine learning model by running below command -
+   1. Ensure that you are in the project home directory. Create the machine learning model by running the command below  -
 
             python training.py
 
@@ -40,7 +40,7 @@ This project has three major parts :
       
       ![Untitled1](https://user-images.githubusercontent.com/41967963/79075879-0cc04800-7d13-11ea-8949-87c23084b3a5.png)
       
-   4. Enter valid values, select options in all the input boxes and hit Submit.
+   4. Enter valid values, select options in all the input boxes and hit Submit. (as shown above)
 
       If everything goes well, you should be able to see the predcited probability in terms of percentage(multiplied by 100) vaule on the 'result.html' page! 
 
